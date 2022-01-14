@@ -5,6 +5,10 @@ const { EmployeeService } = require('../helpers/employee-helper');
 var router = Router();
 var empSvc = new EmployeeService();
 
+///employees/demo
+router.get("/demo", (req,res)=>{
+            res.status(200).json({ 'message':'reached to Demo' });
+});
 
 //Get all employees
 //GET /employees
